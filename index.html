@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+
+<body>
+
+
+    <div style="margin:50px 10px; color:red;font-size:20px">***********Contact Form with Table *********** </div>
+
+    <form action="/" method="get">
+    <table>
+        <tbody>
+
+            <tr>
+                <td><label for="name">Name</label></td>
+                <td><input type="email" name="name" id="name" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="email" name="email" id="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Phone</label></td>
+                <td><input type="tel" name="email" id="phone" minlength="10" maxlength="14"></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender</label></td>
+                <td><input type="radio" name="forumlaire" id="Male" />Male
+                    <input type="radio" name="forumlaire" id="Female" />Female
+                </td>
+            </tr>
+            <tr>
+                <td><label for="profession">Profession: </label></td>
+                <td>
+                    <select name="profession" id="profession">
+                        <option value="Govt. Offical">Govet. Offical</option>
+                        <option value="private">Private</option>
+                        <option value="self">self</option>
+                        <option value="student">student</option>
+                        <option value="others">Others</option>
+                </td>
+            <tr style="vertical-align: top;">
+                <td><label for="message">Message</label></td>
+                <td> <textarea name="messsage" id="message" cols="40" rows="6" placeholder="" minlength="10"
+                        maxlength="100" required></textarea></td>
+            </tr>
+            </select>
+            <tr>
+                <td colspan="2"><input type="checkbox" id="tick" name="tick" required>I accept The termess and conditons
+                </td>
+            </tr>
+            <tr>
+                <td><button type="reset">Reset</td>
+                <td style="text-align: right;"><button type="submit" name="submit">Submit</td>
+            </tr>
+        </tbody>
+    </table>
+    </form>
+    <br>
+    <hr>
+
+
+
+    <div style="margin:50px 10px; color:red;font-size:20px">***********Contact Form without Table *********** </div>
+    <form action="/" method="get">
+        <div>
+            <label for="name">Name</label>
+            <input type="email" name="name" id="name">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="phone">Phone</label>
+            <input type="phone" name="email" id="phone">
+        </div>
+
+        <div>
+            <label for="gender">Gender</label>
+            <input type="radio" name="forumlaire" id="Male" />Male
+            <input type="radio" name="forumlaire" id="Female" />Female
+        </div>
+        <div>
+            <label for="profession">Profession: </label>
+            <select name="profession" id="profession">
+                <option value="male">Male</option>
+                <option value="female" selected>Govt.Official</option>
+            </select>
+        </div>
+        <div>
+            <label for="message">Message</label>
+            <textarea name="messsage" id="message" cols="20" rows="10" style="vertical-align: top;" placeholder=""
+                minlength="10" maxlength="100"></textarea>
+        </div>
+        <div>
+            <label for="tick"></label>
+            <input type="checkbox" id="tick" name="tick">I accept The termess and conditons
+        </div>
+
+        <div>
+            <input type="reset" name="reset" value="reset">
+            <input type="submit" name="submit" value="submit">
+        </div>
+
+    </form>
+    <br>
+    <hr>
+
+</body>
+
+</html>
